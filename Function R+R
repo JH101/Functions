@@ -68,26 +68,40 @@ print("the length of your string is {0}".format(length))
 #question 1
 ```
 
-![Running Question 1 program]()
+![Running Question 1 program](https://www.dropbox.com/s/kcy5911bulexvb8/Functions%20R%2BR.PNG?dl=1)
 
 
 
 ```python
 #question 2
+character = input("Please enter a character: ")
+
+code = ord(character)
+
+print("The code for {0} is {1}".format(character, code))
+
+
 ```
 
-![Running Question 2 program]()
+![Running Question 2 program](https://www.dropbox.com/s/a6tv3rt1opz4d7g/R%2BR%20Functions.PNG?dl=1)
 
 ```python
 #question 3
+code = int(input("Please enter an ACII code: "))
+
+character = chr(code)
+
+print("The character for {0} is {1}".format(code, character))
+
+
 ```
 
-![Running Question 3 program]()
+![Running Question 3 program](https://www.dropbox.com/s/7qrpldbe1q1oqn5/Capture.PNG?dl=1)
 
 ##Importing Modules
 A module is a group of functions that programmers have packaged together for people to use. To use a module in your code you must import it into your program.
 
-You do this by adding a line at the top of your program e.g.
+You do this by adding a line at the top of your program e.g.   
 
 `import math`
 
@@ -102,8 +116,8 @@ When calling a function that is part of a module you need to prefix the function
     |Math Function|Description|
     |-------------|-----------|
     |`math.trunc(3.14159)`| |
-    |`math.pi`| |
-    |`round(math.pi, 3)`| |
+    |`math.pi`|the value of pi|
+    |`round(math.pi, 3)`|the value of pi to 3 decimal places|
 
 2. Using the Python documentation, identify two other useful functions in the math module, briefly describe what each does and give a brief example of the purpose of a program that might use this function.
 
