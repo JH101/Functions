@@ -115,7 +115,7 @@ When calling a function that is part of a module you need to prefix the function
 
     |Math Function|Description|
     |-------------|-----------|
-    |`math.trunc(3.14159)`| |
+    |`math.trunc(3.14159)`|Rounds to the nearest whole number  |
     |`math.pi`|the value of pi|
     |`round(math.pi, 3)`|the value of pi to 3 decimal places|
 
@@ -123,8 +123,8 @@ When calling a function that is part of a module you need to prefix the function
 
     |Math Function|Description|Program that would use it|
     |-------------|-----------|-------------------------|
-    | | | |
-    | | | |
+    |Factorial(n) |calculates the factorial value for that number |calculator program |
+    |sqrt(n) |calculates the sqaure root of that number |calculator program |
 
 ##Using Built-in Functions and Modules
 Let's consider some code that uses some of the built-in functions that you have been investigating.
@@ -136,11 +136,11 @@ Without entering the code into Python, try to explain what the code below does. 
 import math
 
 number_to_change = float(input("Please enter a number to 3 or more decimal places: "))
-number_one = math.trunc(number_to_change)
-number_two = round(number_to_change,2)
+number_one = math.trunc(number_to_change) #Rounds the number inputted to the nearst whole number
+number_two = round(number_to_change,2)#Rounds the number to 2 decimnal places
 
-print("The integer part of your number is {0}.".format(number_one))
-print("The number to two decimal places is {0}.".format(number_two))
+print("The integer part of your number is {0}.".format(number_one))#Prints the nearest whole number that was inputted
+print("The number to two decimal places is {0}.".format(number_two))#prints the number rounded to the nearest 2 numbers
 ```
 
 ##Structured programming
@@ -149,8 +149,8 @@ Read **pages 84 and 85** of AS Computing by Bond and Langfield which describe st
 ###Task 6
 Complete the following statements about structure tables
 
-1. A structure table shows how a problem can be ...
-2. The steps involved in solving a problem are written as ...
+1. A structure table shows how a problem can be broken down into subproblems
+2. The steps involved in solving a problem are written as modules
 
 Consider this problem:
 
@@ -174,10 +174,17 @@ The third sub-problem, calculating the total roasting time, involves some sub-pr
 ###Task 7
 Produce a structure table for the **Roasting time for chickens** problem.
 
+0. Work out the time needed to cook a chicken
+0.1-How big is the chicken?(g)
+0.2-is it stuffed?
+0.3-calculate time
+0.3.1-add 30 min for every 500g of weight
+0.3.2-add 30 min if it is stuffed
+
 ###Task 8
 Draw a hierarchy chart for the 'Roasting time for chickens' problem.
 
-![Hierarchy chart]()
+![Hierarchy chart](https://www.dropbox.com/s/r93pclpmgpvhdhw/Hierarchy%20chart.PNG?dl=1)
 
 ##Summary
 In this R&R you have investigated built-in functions and importing modules. You have seen the basic structure of a function call and how parameters can be passed to a function. You have also seen how to import modules so that their functions are available in your program. You have investigated functions in the random module and the math module.
