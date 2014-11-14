@@ -1,0 +1,39 @@
+#Starter - Functions
+These tasks are designed to refresh the reading and research you have undertaken at home prior to this lesson. If you have not completed the R&R assignment then please speak to your teacher before attempting these exercises.
+
+##Structure tables and heirarchy charts
+
+###Task 1
+Arrange these sub-problems into the structure table outline provided.
+
+|Sub-problems|Structure table|
+|------------|---------------|
+|`CALCULATE pay`|0|
+|`INPUT number of hours worked, pay rate`|0.1|
+|`CALCULATE total pay`|0.2|
+|`CALCULATE overtime pay`|0.2.1|
+|`CALCULATE basic pay`|0.2.2|
+|`DISPLAY total pay`|0.3|
+
+###Task 2
+Complete this hierarchy chart for the above structure chart.
+
+![](https://www.dropbox.com/s/pn275q1b7xboidu/Work%20payment.PNG?dl=1)
+
+###Task 3
+What would a program do that was developed from the above structure table and hierarchy chart?
+
+**Answer:** Calculate and display the total pay of someone depending on the hours worked and the pay rate inputted
+
+###Task 4
+Write the program to calculate total pay using the above plan as your guide.
+```python
+hours = int(input("Please enter the hours worked: "))
+
+pay_rate = float(input("Please enter the pay rate per hour: "))
+
+total_pay = pay_rate*hours
+
+print(total_pay)
+
+```
