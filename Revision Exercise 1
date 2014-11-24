@@ -1,0 +1,14 @@
+**Psuedo Code**
+
+output_symbols <-- number, character
+
+Output number x character
+
+**Test Table**
+
+|Test data|Expected Result|Does it work?(Y/N)|
+|---------|---------------|------------------|
+|5, '#'| #####| Y|
+|6, 'A'| AAAAAA| Y
+|eggs, bacon| Error| Y|
+
